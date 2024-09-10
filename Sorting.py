@@ -1,3 +1,4 @@
+# Bubble Sort algorithm
 def bubble_sort(products, sort_by = "rating"):
     n = len(products)
     for i in range(n):
@@ -8,6 +9,7 @@ def bubble_sort(products, sort_by = "rating"):
                 products[j], products[j+1] = products[j+1], products[j]
     return products
 
+# Merge sort algorithm
 def merge_sort(products, sort_by = "pricing"):
     n= len(products)
     if n > 1:
@@ -40,6 +42,7 @@ def merge_sort(products, sort_by = "pricing"):
             products[i] = result[i]        
     return products
 
+# Quick sort algorithm
 def quick_sort(products, sort_by = "popularity"):
     n = len(products)
     if n <= 1:
