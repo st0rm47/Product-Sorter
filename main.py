@@ -42,11 +42,11 @@ def sort_products():
     tree.delete(*tree.get_children())
     display_products(sorted_products)
     
-# Create the main window
+# Mmain window
 root = tk.Tk()
 root.title("Product Catalog")
 
-# Create a treeview to display products
+# display products
 tree = ttk.Treeview(root, columns=("Name", "Price", "Rating", "Popularity"))
 tree.heading("#1", text="Name")
 tree.heading("#2", text="Price")
@@ -57,16 +57,17 @@ tree.pack()
 # Display products in the treeview
 display_products(products) 
 
-# Create a combobox to select the sorting criteria
+# Box to select the sorting criteria
 sort_by_combobox = ttk.Combobox(root, values=["Price", "Rating", "Popularity"], state= "readonly")
 sort_by_combobox.current(0) # Set default to Price
 sort_by_combobox.pack(pady = 5)
 
+# Box to select the order of sorting
 order_combobox = ttk.Combobox(root, values=["Low to High", "High to Low"], state="readonly")
 order_combobox.current(0)  # Set default to Ascending
 order_combobox.pack(pady = 5)
 
-# Create a button to sort products
+# Button to sort products
 sort_button = ttk.Button(root, text="Sort", command=sort_products)
 sort_button.pack(pady = 10) # Add padding to the button
 
