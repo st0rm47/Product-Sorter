@@ -33,8 +33,11 @@ python main.py
 3. **View Sorted Results**: Click on the Sort button to display the sorted product list.
 
 ## Screenshots
+- A simple and clean layout showing options to sort by criteria and order. Products are displayed in alphabetical order by default for easy navigation.
+![Screenshot 2024-09-11 202045](https://github.com/user-attachments/assets/1e1b5dcb-d9a0-4c07-afe6-a4716b112c64)
 
-
+- A sorted list of products displayed based on Rating in descending order
+![Screenshot 2024-09-11 202106](https://github.com/user-attachments/assets/0295fc8a-29fc-44c6-8699-bf5226b2b8c6)
 
 
 ## Future Enhancements
